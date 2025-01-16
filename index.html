@@ -4,9 +4,23 @@
     <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres del documento-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Se utiliza para el responsive, pero no significa que con esto el sitio ya sea rsponsivo-->
     <title> Entre beats y corridos </title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style> /* Estilo interno */
+        span{
+            color: navy;
+        }
+
+        .tops{
+            background-color: brown;
+        }
+
+    </style>
+ -->
 </head>
 <body>
-   <h1> Entre beats y corridos </h1> <!-- Encabezado de mayor jerarquía, debe haber solo uno por documento -->
+   <h1 style="color:crimson;"> Entre beats y corridos </h1> <!-- Encabezado de mayor jerarquía, debe haber solo uno por documento -->
+   <!-- Estilo en línea, con mayor peso, pero no es una buena práctica -->
     <p>
         Bienvenida y bienvenido a este blog con información relevante sobre el rap mexicano y los corridos tumbados. Encontrarás reseñas, tops y chismecito.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequatur ab recusandae blanditiis, adipisci odio sit in facilis, quo nulla quos sunt ut, at nisi alias sequi cum repudiandae? Repudiandae!
@@ -21,10 +35,10 @@
    <h2> Poema a Natanael Cano </h2>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> <!-- Elemento en bloque que ocupa todo el ancho disponible -->
     <p> Tus ojos son dos esmeraldas brillantes </p> 
-    <span> En cuerdas vibra el alma de un soñador, </span> <br><!-- Elemento en línea que solo ocupa el espacio necesario para existir --> 
-    <span> corridos tumbados, su sello y su clamor. </span> <br/>
-    <span> De Hermosillo al mundo, un eco sin final, </span> <br>
-    <span> la calle y el arte en un verso inmortal. </span> <br>
+    <span class="verso"> En cuerdas vibra el alma de un soñador, </span> <br><!-- Elemento en línea que solo ocupa el espacio necesario para existir --> 
+    <span class="verso"> corridos tumbados, su sello y su clamor. </span> <br/>
+    <span class="verso" id="verso-resaltado"> De Hermosillo al mundo, un eco sin final, </span> <br>
+    <span class="verso"> la calle y el arte en un verso inmortal. </span> <br>
     <!-- Span es un contenedor genérico en línea.  -->
 
     <hr/> <!-- Crea una línea horizontal y es etiqueta de autocierre -->
@@ -35,14 +49,15 @@
 
    <h3> Lista de mis raperas y raperos favs </h3>
    
-    <ul><!-- Lista desordenada -->
+    <ul>
+   <!-- Lista desordenada -->
         <li> Masta Quba </li> <!-- list item -->
         <img src="imagenes/raperas/MastaQuba.jpg" alt="Banner de la rapera mexicana Masta Quba, que posa de frente a la cámara"> <!-- Img es etiqueta de autocierre, aquí la imagen se encuentra dentro de nuestro proyecto. -->
         <!-- El texto alternativo debe ser descriptivo -->
         <li> Rebeca Lane </li>
         <li> Ana Tijoux </li>
         <li> Trueno </li>
-            <ol> <!-- Lista ordenada -->
+            <ol class="tops"> <!-- Lista ordenada -->
                 <li> Tierra Zanta </li>
                 <li> Salimos de Noche </li>
                     <ul>
@@ -69,12 +84,17 @@
         <dd> Estado mental donde quieres que el amor sea correspondido </dd>
     </dl>
 
-    <img src="https://elcomercio.pe/resizer/idK2rtmxOQJScUzd4pijGdaVhAo=/680x680/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/RL2OGVIDHNEP5HWUDAVQGHVYGA.png" alt="Foto de Trueno, joven rapero argentino, sentado en cuclillas enfente de un graffiti de su barrio, mientras hace una señal de 4 con su mano derecha">
+    <img src="https://elcomercio.pe/resizer/idK2rtmxOQJScUzd4pijGdaVhAo=/680x680/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/RL2OGVIDHNEP5HWUDAVQGHVYGA.png" alt="Foto de Trueno, joven rapero argentino, sentado en cuclillas enfente de un graffiti de su barrio, mientras hace una señal de 4 con su mano derecha" id="foto-trueno">
     <!-- La imagen es un recurso externo -->
 
    <h4> Otro gato </h4>
-   <h5> Tkm, Nata </h5>
-   <h6> Me gusta el rap</h6>
+   <h5> Cosas por las que quiero a Natanael Cano </h5>
+        <ul class="tops">
+            <li> Porque es random </li>
+            <li> Porque su artista fav es Ariel Camacho </li>
+            <li> Por sus tatuajes </li>
+        </ul>
+   <h6 class="tops"> Me gusta el rap</h6>
 
 </body>
 </html>

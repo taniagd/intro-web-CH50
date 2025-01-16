@@ -1,0 +1,47 @@
+/* Este es un comentario en CSS*/
+
+/* Selector universal: Selecciona toooodos los elementos */
+
+/* *{
+    background-color: cornflowerblue;
+} */
+
+h1{ 
+    color:blueviolet;
+    text-align:center;
+}
+
+
+/* Selectores de tipo o etiqueta: Seleccionar los elementos con ese nombre */
+h3{
+    color:#5e2129;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Selector de tipo*/
+p{
+    color: orangered;
+}
+
+/* Selector de clase: Las clases sí se comparten entre elementos*/
+.tops{ /* La clase tops se utilizó en una lista ordenada y otra desordenada (líneas 60 y 92) */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellowgreen;
+    font-size: 30px;
+}
+
+.verso{ /* La clase verso se utilizó en las etiquetas span del poema (línea 38 a 41) */
+    color: deeppink;
+}
+
+/* Selector de ID: Seleccionan un elemento específico y NO se comparte con otros elementos */
+#verso-resaltado{ /* El id verso-resaltado se utilizó en la línea 40, en uno de los elementos span */
+    color: chartreuse;
+    font-size: 20px;
+}
+
+#foto-trueno{
+    width: 300px;
+    height: 250px;
+}
