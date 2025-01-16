@@ -1,0 +1,63 @@
+/* Selector universal 
+*{
+    background-color: aquamarine;
+} 
+*/
+
+/* ¿Cómo se controla el orden en CSS
+1. Importancia
+2. Especificidad
+3. Orden de las fuentes: hojas de estilo externa, estilos en línea y embebido
+
+Valores de la especificidad en CSS, de mayor a menor
+1. !important - Le gana a todos, mayor especifidad, pero rompe las reglas. No es una buena práctica
+2. Estilos en línea -- Valor de 1000
+3. ID - Valor de 100
+4. Clases, atributos y pseudoclases -- Valor de 10
+5. Selectores de tipo y pseudo-elementos -- Valor de 1.
+6. Selector universal -- Valor de 0.
+*/
+
+h1#title{ /* Especificidad es el primer método de CSS para decidir qué estilos aplicar. En este caso, la suma de especificidad es de 101 */
+    color: brown;
+}
+
+h1#title{
+    color: purple;
+    background-color: bisque;
+}
+
+#title{
+    color: royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: crimson;
+}
+
+h1{
+    background-color: orangered !important;
+}
+ *
+/* Cascada es el segundo método que utiliza CSS para definir qué estilos aplicará, y aplica los últimos estilos declarados*/
+
+title{
+    color:seagreen !important;
+}
+
+h1{
+    background-color: black !important;
+} 
+
+/* Herencia
+Body tiene dos hijos: h1 y p y les hereda estilos */
+body{
+    border: 5px solid slateblue; /* Grosor del borde, estilo y color */
+    font-family: cursive;
+    color: deeppink;
+}
+
+h1{ /* Rompimos con la herencia en cuanto al color de la fuente */
+    color: black;
+}
