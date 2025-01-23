@@ -6,6 +6,7 @@
     <title>Bootstrap demo</title>
     <!-- Enlace del CDN de CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Hoja de estilos personalizada -->
   </head>
 
   <body>
@@ -86,17 +87,75 @@
             </div>
         </div>
     </section>
+
     <!-- Columnas con anchos diferentes -->
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-1 border"> A </div>
-                <div class="col-2 border"> B </div>
-                <div class="col-3 border"> C </div>
-                <div class="col-6 border"> D </div>
+                <div class="col-1 border" style="background-color: burlywood;"> A </div>
+                <div class="col-2 border" style="background-color: chocolate;"> B </div>
+                <div class="col-3 border" style="background-color: aquamarine;"> C </div>
+                <div class="col-6 border" style="background-color: firebrick;"> D </div>
+                <!-- Cuando se exceden las 12 columnas porque se colocó un tamaño determinado a las columnas, la columna excedente se pasa a una nueva fila -->
+                <!-- <div class="col-6 border" style="background-color: deeppink;"> E </div> -->
             </div>
         </div>
     </section>
+
+    <!-- Columnas con breakpoints: para tamaños específicos. Es importante ir de la pantalla más pequeña a la más grande -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 border" style="background-color: burlywood;">
+                    "El amor es una catástrofe espléndida: saber que te vas a estrellar contra una pared, y acelerar a pesar de todo: correr en pos de tu propio desastre con una sonrisa en los labios; esperar con curiosidad el momento en que todo se va a ir al carajo. El amor es la única decepción programada, la única desgracia previsible que deseamos repetir" - El amor dura tres años
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 border" style="background-color: chocolate;"> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi totam ullam possimus nesciunt magni. Libero rerum necessitatibus facilis esse dicta vel dolor saepe eveniet fuga consectetur, dolore corrupti eum ea!
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 border" style="background-color: aquamarine;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis, ratione sapiente laborum vitae incidunt fuga nobis ullam reprehenderit debitis fugit. Atque facere beatae iure odio, maiores consequatur omnis reprehenderit.
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 border" style="background-color: firebrick;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa labore quibusdam cupiditate ratione, nihil pariatur libero sapiente aliquam dolorem, quisquam minus esse officiis eligendi impedit ab corporis voluptate cum. Delectus.
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Columnas con breakpoints sin usar tantas clases -->
+     <section>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col border"> "El amor es una catástrofe espléndida: saber que te vas a estrellar contra una pared, y acelerar a pesar de todo: correr en pos de tu propio desastre con una sonrisa en los labios; esperar con curiosidad el momento en que todo se va a ir al carajo. El amor es la única decepción programada, la única desgracia previsible que deseamos repetir" - El amor dura tres años </div>
+                <div class="col border"> Compañeros canes:
+                    Aprovecho esta concentración
+                    para tomar por asalto la palabra
+                    y decirles mi desdén, mi resistencia, mi furia
+                    por la vida de perros
+                    a que se les ha sometido
+                    y que ustedes aceptan
+                    sumisamente
+                    con una larga, peluda y roñosa
+                    cobardía entre las patas
+                    (animación en el parque). </div>
+                <div class="col border">Camaradas perros callejeros:
+                    ¿Van a continuar luchando unos con otros?
+                    ¿Van a rodear el hueso
+                    el pobre hueso conquistado,
+                    con la cerca de púas
+                    del gruñido?
+                    ¿Y lanzarse a dentelladas
+                    contra el que también vive las manos del hambre
+                    cerrándose en su cuello? </div>
+                <div class="col border">La verdadera sabiduría se encuentra en conocer nuestras propias limitaciones.
+                    -Michael Ende</div>
+            </div>
+        </div>
+     </section>
+    
     
     
     <!-- Enlace de CDN de JS de Bootstrap -->
