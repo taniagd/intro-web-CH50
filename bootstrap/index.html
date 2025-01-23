@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Enlace del CDN de CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header>
+        <h1>Hello, world!</h1>
+    </header>
+
+    <!-- Contenedores -->
+    <div class="container" style="background-color: cornflowerblue;">
+        <h1>Contenedor 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa et quidem delectus? Quibusdam qui cum possimus. Libero minima voluptas deleniti eligendi quas alias! Fugit in incidunt iusto, quia minima ducimus.</p>
+    </div>
+    <div class="container-fluid" style="background-color: palevioletred;">
+        Contenedor 2
+    </div>
+
+    <!-- Contenedor con breakpoint específico. En pantallas xs,s y md ocupará todo el ancho disponible, mientras que en pantallas lg, xl y xxl tendrá un ancho específico,q ue no es el 100% -->
+    <div class="container-lg" style="background-color: olivedrab;">
+        Contenedor 3
+    </div>
+
+    <!-- GRID -->
+    <!-- Cada fila está dividida en 12 columnas, que se pueden distribuir de diferentes maneras 
+    Row- Fila - Horizontal
+    Col - columna - vertical-->
+    <main>
+        <div class="container">
+            <div class="row">
+                <!-- Cuando no hay especificación en el tamaño de columnas, se reparte el espacio de manera equitativa -->
+                <div class="col"> Columna 1 
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque nostrum deleniti labore. Nam, iure ipsum. Tempora nesciunt, et sapiente quia temporibus officiis maxime necessitatibus voluptatum neque porro ea unde.</p>
+                </div>
+                <div class="col"> Columna 2
+                    <ol>
+                        <li> "El camino de los reyes" -Brandon Sanderson</li>
+                        <li> "Clean code - Martin Robertson" </li>
+                        <li> "Los recuerdos del porvenir" - Elena Garro </li>
+                        <li> "100 años de soledad" - Gabriel García Márquez</li>
+                        <li> "Padre rico, padre pobre" - Robert Kiyosaki y Sharon Lechter </li>
+                    </ol>
+
+                </div>
+                <div class="col"> Columna 3
+                    <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/800px-Twemoji_1f600.svg.png" alt="Emoji de cara feliz con ojos sonrientes">
+                
+                    <div class="row">
+                        <div class="col border"> Información técnica
+                        <p> Nombre unicode: Cara Feliz Con Ojos Sonrientes. Se le conoce con los nombres: ^^, Happy Face, Smile, Smiley Face  </p>
+                        </div>
+                        <div class="col border"> Datos curiosos 
+                            <p>En Snapchat, este emoji junto a un contacto denota que envías mensajes a esa persona con frecuencia, pero que no es tu mejor amigo.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    <!-- Enlace de CDN de JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
